@@ -5,8 +5,10 @@ from PIL import Image
 from io import BytesIO
 import os
 
-
 REPLICATE_API_TOKEN = os.getenv("REPLICATE_API_TOKEN")
+
+if not REPLICATE_API_TOKEN:
+    raise ValueError("REPLICATE_API_TOKEN no está configurado en las variables de entorno.")
 
 st.set_page_config(page_title="Generador estilo Ghibli", layout="centered")
 
