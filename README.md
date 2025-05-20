@@ -63,6 +63,7 @@ source venv/bin/activate
 ```
 
 ### 🐳 Paso a paso:
+(Recuerda tener Docker Desktop abierto en una ventana)
 
 1. **Construye la imagen:**
 
@@ -80,6 +81,14 @@ docker run -p 8501:8501 instant-character-app
 👉 `http://localhost:8501`
 
 ---
+
+4. **Usa la app:**
+
+   - Escoge uno de los estilos disponibles: **Makoto** o **Ghibli**.
+   - Sube una imagen del personaje que quieres personalizar.
+   - Escribe un *prompt* con la situación o escenario en el que quieres ver a tu personaje  
+     *(por ejemplo: `"en una biblioteca"` o `"tocando el piano"`)*.
+
 
 ## 📁 Estructura del proyecto
 
@@ -104,7 +113,7 @@ Este proyecto fue desarrollado por:
 
 - **María de los Ángeles Amú Moreno**
 - **Manuela Mayorga Rojas**
-- **Mariana Mera**
+- **Mariana Mera Gutierrez**
 
 Como parte de una implementación práctica del artículo _"InstantCharacter"_ enfocada en la fase de inferencia y visualización con herramientas accesibles.
 
@@ -114,3 +123,5 @@ Como parte de una implementación práctica del artículo _"InstantCharacter"_ e
 
 📄 Tao, J., Zhang, Y., Wang, Q., et al. (2024). *InstantCharacter: Personaliza cualquier personaje con un marco transformador de difusión escalable*.  
 🔗 [Repositorio oficial del paper](https://github.com/Tencent/InstantCharacter)
+
+Si tienes alguna duda no dudes en contactarnos ✨
