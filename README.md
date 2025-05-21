@@ -114,17 +114,18 @@ InstantCharacter/
 └── styles.py                     # Archivo con estilos CSS personalizados
 
 
+
 ---
 
 ## 👩‍💻 Autoras del proyecto
 
 Este proyecto fue desarrollado por:
 
-- **María de los Ángeles Amú Moreno**
-- **Manuela Mayorga Rojas**
+- **María de los Ángeles Amú Moreno**  
+- **Manuela Mayorga Rojas**  
 - **Mariana Mera Gutierrez**
 
-Como parte de una implementación práctica del artículo _"InstantCharacter"_ enfocada en la fase de inferencia y visualización con herramientas accesibles.
+Como parte de una implementación práctica del artículo _"InstantCharacter"_, enfocada en la fase de inferencia y visualización con herramientas accesibles.
 
 ---
 
@@ -133,9 +134,10 @@ Como parte de una implementación práctica del artículo _"InstantCharacter"_ e
 📄 Tao, J., Zhang, Y., Wang, Q., et al. (2024). *InstantCharacter: Personaliza cualquier personaje con un marco transformador de difusión escalable*.  
 🔗 [Repositorio oficial del paper](https://github.com/Tencent/InstantCharacter)
 
+---
 
+Si tienes alguna duda, no dudes en contactarnos ✨
 
-Si tienes alguna duda no dudes en contactarnos ✨
 
 
 
