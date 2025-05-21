@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 #  InstantCharacter - Implementación sencilla
 
 ![InstantCharacter](data/Image_1_readme.png)
+=======
+# 🎭 InstantCharacter - Implementación sencilla
+>>>>>>> d521a818fed16f0ab9826d9c11417842ba950c5d
 
 Este proyecto es una **implementación simplificada** del artículo _"InstantCharacter: Personaliza cualquier personaje con un marco transformador de difusión escalable"_, utilizando **Streamlit** para la inferencia visual y **Docker** para su despliegue local en un entorno completamente aislado.
 
@@ -31,7 +35,12 @@ La aplicación permite cargar una imagen de referencia y una instrucción textua
 
 ## 🚀 Ejecución con Docker (recomendado)
 
+<<<<<<< HEAD
 Install Python : [Python Downloads](https://www.python.org/downloads/)   
+=======
+Install Python : [Python Downloads](https://www.python.org/downloads/)  
+Install PostgreSQL : [PostgreSQL Downloads](https://www.postgresql.org/download/)  
+>>>>>>> d521a818fed16f0ab9826d9c11417842ba950c5d
 
 Antes de ejecutar la aplicación, es **necesario obtener un token API** para el servicio:
 
@@ -64,6 +73,10 @@ source venv/bin/activate
 ```
 
 ### 🐳 Paso a paso:
+<<<<<<< HEAD
+=======
+(Recuerda tener Docker Desktop abierto en una ventana)
+>>>>>>> d521a818fed16f0ab9826d9c11417842ba950c5d
 
 1. **Construye la imagen:**
 
@@ -95,6 +108,7 @@ docker run -p 8501:8501 instant-character-app
 ```
 InstantCharacter/
 │
+<<<<<<< HEAD
 ├── data/                         # Carpeta para datos de entrada
 ├── imagenes_generadas/          # Carpeta donde se guardan las imágenes generadas
 │
@@ -113,6 +127,16 @@ InstantCharacter/
 ├── requirements.txt              # Lista de dependencias del proyecto
 └── styles.py                     # Archivo con estilos CSS personalizados
 
+=======
+├── InstantCharacter/
+│   ├── app.py             # Código principal de la app Streamlit
+│   └── output.png         # Imagen de ejemplo generada
+│
+├── .gitignore
+├── requirements.txt       # Dependencias del proyecto
+├── Dockerfile             # Dockerfile para despliegue
+└── README.md
+>>>>>>> d521a818fed16f0ab9826d9c11417842ba950c5d
 ```
 
 ---
@@ -134,4 +158,8 @@ Como parte de una implementación práctica del artículo _"InstantCharacter"_ e
 📄 Tao, J., Zhang, Y., Wang, Q., et al. (2024). *InstantCharacter: Personaliza cualquier personaje con un marco transformador de difusión escalable*.  
 🔗 [Repositorio oficial del paper](https://github.com/Tencent/InstantCharacter)
 
+<<<<<<< HEAD
 Si tienes alguna duda no dudes en contactarnos ✨
+=======
+Si tienes alguna duda no dudes en contactarnos ✨
+>>>>>>> d521a818fed16f0ab9826d9c11417842ba950c5d
