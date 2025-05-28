@@ -38,19 +38,19 @@ Una vez instalado, abre Docker Desktop.
 
 Antes de ejecutar la aplicación, es **necesario obtener un token API** para el servicio:
 
-1. Ve a la página:  
+**1. Ve a la página:**  
    [https://internal.replicate.com/tuannha/instant-character](https://internal.replicate.com/tuannha/instant-character)  
 
-2. Inicia sesión y genera tu **API token** en la sección correspondiente:
+**2. Inicia sesión y genera tu **API token** en la sección correspondiente:**
 
 ![Pantalla de billing](data/billing.png)
 
-3. Configura tu medio de pago:
+**3. Configura tu medio de pago:**
 
 ![Pago](data/tarjeta.png)
 ![Pago1](data/pago.png)
 
-4. Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido (reemplaza `tu_token_aqui` con tu token real):
+**4. Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido (reemplaza `tu_token_aqui` con tu token real):**
 
 ```env
 REPLICATE_API_TOKEN=tu_token_aqui
@@ -76,38 +76,38 @@ source venv/bin/activate
 
 ### 🐳 Paso a paso:
 
-1. **Construye la imagen:**
+**1. Construye la imagen:**
 
 ```bash
 docker build -t instant-character-app .
 ```
 
-2. **Ejecuta el contenedor:**
+**2. Ejecuta el contenedor:**
 
 ```bash
 docker run --env-file .env -p 8501:8501 instant-character-app
 ```
 
-3. **Abre tu navegador en:**  
+**3. Abre tu navegador en:**  
 👉 `http://localhost:8501`
 
 Una vez ingreses, verás que la app consta de 4 páginas:
-   1. Inicio:
+   1. **Inicio:**
    ![inicio](data/inicio.png)
 
-   2. Arquitectura: aquí encontrarás información explicada sobre la arquitectura utilizada.
+   2. **Arquitectura:** aquí encontrarás información explicada sobre la arquitectura utilizada.
    ![Arquitectura](data/arqui.png)
 
-   3. Inferencia: en esta parte podrás hacer tu inferencia
+   3. **Inferencia:** en esta parte podrás hacer tu inferencia
    ![Inferencia](data/inferencia.png)
 
-   4. Galería: aquí encontrarás algunas imagenes de referencia, y todas tus creaciones se almacenarán aquí.
+   4. **Galería:** aquí encontrarás algunas imagenes de referencia, y todas tus creaciones se almacenarán aquí.
    ![Galeria](data/galeria.png)
 
 
 ---
 
-4. **Usa la app:**
+**4. Usa la app:**
 
    - Ingresa a la pestaña de **Inferencia**
    - Escoge uno de los estilos disponibles: **Makoto** o **Ghibli**.
