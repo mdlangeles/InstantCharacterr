@@ -45,7 +45,12 @@ Antes de ejecutar la aplicación, es **necesario obtener un token API** para el 
 
 ![Pantalla de billing](data/billing.png)
 
-3. Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido (reemplaza `tu_token_aqui` con tu token real):
+3. Configura tu medio de pago:
+
+![Pago](data/tarjeta.png)
+![Pago1](data/pago.png)
+
+4. Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido (reemplaza `tu_token_aqui` con tu token real):
 
 ```env
 REPLICATE_API_TOKEN=tu_token_aqui
@@ -86,10 +91,25 @@ docker run --env-file .env -p 8501:8501 instant-character-app
 3. **Abre tu navegador en:**  
 👉 `http://localhost:8501`
 
+Una vez ingreses, verás que la app consta de 4 páginas:
+   1. Inicio:
+   ![inicio](data/inicio.png)
+
+   2. Arquitectura: aquí encontrarás información explicada sobre la arquitectura utilizada.
+   ![Arquitectura](data/arqui.png)
+
+   3. Inferencia: en esta parte podrás hacer tu inferencia
+   ![Inferencia](data/inferencia.png)
+
+   4. Galería: aquí encontrarás algunas imagenes de referencia, y todas tus creaciones se almacenarán aquí.
+   ![Galeria](data/galeria.png)
+
+
 ---
 
 4. **Usa la app:**
 
+   - Ingresa a la pestaña de **Inferencia**
    - Escoge uno de los estilos disponibles: **Makoto** o **Ghibli**.
    - Sube una imagen del personaje que quieres personalizar.
    - Escribe un *prompt* con la situación o escenario en el que quieres ver a tu personaje  
@@ -132,9 +152,9 @@ InstantCharacter/
 
 Este proyecto fue desarrollado por:
 
-- **María de los Ángeles Amú Moreno**  
-- **Manuela Mayorga Rojas**  
-- **Mariana Mera Gutierrez**
+- **María de los Ángeles Amú Moreno** [@mdlangeles](https://github.com/mdlangeles)
+- **Manuela Mayorga Rojas**  [@ManuelaMayorga](https://github.com/ManuelaMayorga)
+- **Mariana Mera Gutierrez** [@MarianaMera12](https://github.com/MarianaMera12)
 
 Como parte de una implementación práctica del artículo _"InstantCharacter"_, enfocada en la fase de inferencia y visualización con herramientas accesibles.
 
