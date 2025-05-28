@@ -93,7 +93,10 @@ docker run --env-file .env -p 8501:8501 instant-character-app
    - Escoge uno de los estilos disponibles: **Makoto** o **Ghibli**.
    - Sube una imagen del personaje que quieres personalizar.
    - Escribe un *prompt* con la situación o escenario en el que quieres ver a tu personaje  
-     *(por ejemplo: `"en una biblioteca"` o `"tocando el piano"`)*.
+     *(por ejemplo: `"Tomando cerveza en un bar"`)*.
+   - Una vez le das al botón de "Generar Imagen", tu salida se verá algo así:
+      ![Salida](data/salida.jpg)
+
 
 
 ## 📁 Estructura del proyecto
