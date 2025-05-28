@@ -31,13 +31,19 @@ La aplicación permite cargar una imagen de referencia y una instrucción textua
 
 ## 🚀 Ejecución con Docker (recomendado)
 
-Install Python : [Python Downloads](https://www.python.org/downloads/)  
+Instala Python : [Python Downloads](https://www.python.org/downloads/)
+Instala Docker : [Python Downloads](https://www.docker.com/)
+
+Una vez instalado, abre Docker Desktop.
 
 Antes de ejecutar la aplicación, es **necesario obtener un token API** para el servicio:
 
 1. Ve a la página:  
    [https://internal.replicate.com/tuannha/instant-character](https://internal.replicate.com/tuannha/instant-character)  
-2. Inicia sesión y genera tu **API token** en la sección correspondiente.
+
+2. Inicia sesión y genera tu **API token** en la sección correspondiente:
+
+![Pantalla de billing](data/billing.png)
 
 3. Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido (reemplaza `tu_token_aqui` con tu token real):
 
@@ -74,7 +80,7 @@ docker build -t instant-character-app .
 2. **Ejecuta el contenedor:**
 
 ```bash
-docker run -p 8501:8501 instant-character-app
+docker run --env-file .env -p 8501:8501 instant-character-app
 ```
 
 3. **Abre tu navegador en:**  
@@ -95,7 +101,8 @@ docker run -p 8501:8501 instant-character-app
 ```
 InstantCharacter/
 │
-├── data/                         # Carpeta para datos de entrada
+├── data/                         # Carpeta con imagenes usadas para la interfaz
+├── imagenes/                     #Carptea con algunas imagenes usadas para la interfaz
 ├── imagenes_generadas/          # Carpeta donde se guardan las imágenes generadas
 │
 ├── pages/                        # Scripts para navegación en múltiples vistas de Streamlit
@@ -103,9 +110,9 @@ InstantCharacter/
 │   ├── 2_Inferencia.py           # Lógica de inferencia y generación de imágenes
 │   └── 3_Galeria.py              # Galería de imágenes generadas
 │
-├── venv/                         # Entorno virtual (no se versiona normalmente)
+├── venv/                         # Entorno virtual 
 │
-├── .env                          # Variables de entorno
+├── .env                          # Variable de entorno (Token)
 ├── .gitignore                    # Archivos/Carpetas ignoradas por Git
 ├── Dockerfile                    # Configuración para contenedor Docker
 ├── Inicio.py                     # Punto de entrada principal de la app Streamlit

@@ -6,11 +6,15 @@ from io import BytesIO
 import os
 import base64
 import time
+from dotenv import load_dotenv
+
+
 
 from styles import aplicar_estilos
 
 aplicar_estilos()
 
+load_dotenv()
 # ============================
 
 # Crear carpeta si no existe
@@ -20,7 +24,7 @@ if not os.path.exists("imagenes_generadas"):
 # API Token
 REPLICATE_API_TOKEN = os.getenv("REPLICATE_API_TOKEN")
 if not REPLICATE_API_TOKEN:
-    st.error("⚠️ La variable de entorno REPLICATE_API_TOKEN no está configurada.")
+    st.error("La variable de entorno REPLICATE_API_TOKEN no está configurada.")
     st.stop()
 
 # Título y subtítulo

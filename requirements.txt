@@ -3,3 +3,4 @@ replicate
 requests
 Pillow
 numpy
+python-dotenv

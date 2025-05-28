@@ -112,5 +112,18 @@ def aplicar_estilos():
         transform: scale(1.05);
         box-shadow: 0 15px 35px rgba(255, 0, 247, 0.6);
     }
+                
+    .info-box {
+    background-color: #f5f5f5;  /* Gris suave */
+    border-radius: 16px;
+    padding: 1.2rem 1.5rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid var(--color-accent1);
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+    }
+
     </style>
     """, unsafe_allow_html=True)

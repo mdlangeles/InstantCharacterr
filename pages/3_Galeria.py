@@ -56,7 +56,7 @@ archivos = sorted(os.listdir(ruta_generadas), reverse=True)
 if archivos:
     cols = st.columns(4)
 
-    for i, archivo in enumerate(archivos[:12]):
+    for i, archivo in enumerate(archivos[:200]):
         if archivo.endswith(".png"):
             ruta_imagen = os.path.join(ruta_generadas, archivo)
             estilo = archivo.split("_")[-2] if "_" in archivo else archivo.replace(".png", "")
