@@ -32,7 +32,7 @@ La aplicación permite cargar una imagen de referencia y una instrucción textua
 ## 🚀 Ejecución con Docker (recomendado)
 
 Instala Python : [Python Downloads](https://www.python.org/downloads/)
-Instala Docker : [Python Downloads](https://www.docker.com/)
+Instala Docker : [Docker Downloads](https://www.docker.com/)
 
 Una vez instalado, abre Docker Desktop.
 
