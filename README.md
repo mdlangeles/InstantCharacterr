@@ -8,7 +8,7 @@ La aplicación permite cargar una imagen de referencia y una instrucción textua
 
 ---
 
-## 🧠 ¿Qué hace InstantCharacter?
+##  ¿Qué hace InstantCharacter?
 
 **InstantCharacter** es un modelo generativo basado en **Diffusion Transformers (DiT)**, que permite:
 
@@ -19,7 +19,7 @@ La aplicación permite cargar una imagen de referencia y una instrucción textua
 
 ---
 
-## 🧠 Resumen teórico y arquitectura
+##  Resumen teórico y arquitectura
 
 - El modelo reemplaza la clásica arquitectura **U-Net** con un **transformador de difusión (DiT)** para mayor capacidad y flexibilidad.
 - Integra un **adaptador escalable**, compuesto por transformadores apilados, que refina progresivamente las características del personaje.
@@ -29,7 +29,7 @@ La aplicación permite cargar una imagen de referencia y una instrucción textua
 
 ---
 
-## 🚀 Ejecución con Docker (recomendado)
+##  Ejecución con Docker (recomendado)
 
 Instala Python : [Python Downloads](https://www.python.org/downloads/)
 Instala Docker : [Docker Downloads](https://www.docker.com/)
@@ -74,7 +74,12 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### 🐳 Paso a paso:
+**Instala las librerías necesarias:**
+```bash
+pip install -r requirements.txt
+```
+
+### 🐳 Paso a paso con Docker:
 
 **1. Construye la imagen:**
 
@@ -119,7 +124,7 @@ Una vez ingreses, verás que la app consta de 4 páginas:
 
 
 
-## 📁 Estructura del proyecto
+##  Estructura del proyecto
 
 ```
 InstantCharacter/
@@ -160,7 +165,7 @@ Como parte de una implementación práctica del artículo _"InstantCharacter"_, 
 
 ---
 
-## 📚 Referencia
+##  Referencia
 
 📄 Tao, J., Zhang, Y., Wang, Q., et al. (2024). *InstantCharacter: Personaliza cualquier personaje con un marco transformador de difusión escalable*.  
 🔗 [Repositorio oficial del paper](https://github.com/Tencent/InstantCharacter)
