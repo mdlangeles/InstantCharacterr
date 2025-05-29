@@ -29,6 +29,33 @@ La aplicación permite cargar una imagen de referencia y una instrucción textua
 
 ---
 
+##  Estructura del proyecto
+
+```
+InstantCharacter/
+│
+├── data/                         # Carpeta con imagenes usadas para la interfaz
+├── imagenes/                     #Carptea con algunas imagenes usadas para la interfaz
+├── imagenes_generadas/          # Carpeta donde se guardan las imágenes generadas
+│
+├── pages/                        # Scripts para navegación en múltiples vistas de Streamlit
+│   ├── 1_Arquitectura.py         # Explicación visual de la arquitectura
+│   ├── 2_Inferencia.py           # Lógica de inferencia y generación de imágenes
+│   └── 3_Galeria.py              # Galería de imágenes generadas
+│
+├── venv/                         # Entorno virtual 
+│
+├── .env                          # Variable de entorno (Token)
+├── .gitignore                    # Archivos/Carpetas ignoradas por Git
+├── Dockerfile                    # Configuración para contenedor Docker
+├── Inicio.py                     # Punto de entrada principal de la app Streamlit
+├── README.md                     # Documentación del proyecto
+├── requirements.txt              # Lista de dependencias del proyecto
+└── styles.py                     # Archivo con estilos CSS personalizados
+
+```
+---
+
 ##  Ejecución con Docker (recomendado)
 
 Instala Python : [Python Downloads](https://www.python.org/downloads/)
@@ -123,33 +150,6 @@ Una vez ingreses, verás que la app consta de 4 páginas:
    - Una vez le das al botón de "Generar Imagen", tu salida se verá algo así:
       ![Salida](data/salida.jpg)
 
-
-
-##  Estructura del proyecto
-
-```
-InstantCharacter/
-│
-├── data/                         # Carpeta con imagenes usadas para la interfaz
-├── imagenes/                     #Carptea con algunas imagenes usadas para la interfaz
-├── imagenes_generadas/          # Carpeta donde se guardan las imágenes generadas
-│
-├── pages/                        # Scripts para navegación en múltiples vistas de Streamlit
-│   ├── 1_Arquitectura.py         # Explicación visual de la arquitectura
-│   ├── 2_Inferencia.py           # Lógica de inferencia y generación de imágenes
-│   └── 3_Galeria.py              # Galería de imágenes generadas
-│
-├── venv/                         # Entorno virtual 
-│
-├── .env                          # Variable de entorno (Token)
-├── .gitignore                    # Archivos/Carpetas ignoradas por Git
-├── Dockerfile                    # Configuración para contenedor Docker
-├── Inicio.py                     # Punto de entrada principal de la app Streamlit
-├── README.md                     # Documentación del proyecto
-├── requirements.txt              # Lista de dependencias del proyecto
-└── styles.py                     # Archivo con estilos CSS personalizados
-
-```
 
 
 ---
